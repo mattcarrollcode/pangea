@@ -33,5 +33,43 @@ Note: this setup has only been testing for macOS.
 
 ## Running the code
 
-1. Python `python pangea-ip-intel-example.py`
+1. Run `python pangea-ip-intel-example.py`
+   You should see similar output to what is below:
+   ```
+   $ python pangea-ip-intel-example.py
+   Calling Pangea IP Intel Geolocate API with IP Address '93.231.182.110'...
+   Data:
+   {   'city': 'unna',
+       'country': 'Federal Republic Of Germany',
+       'country_code': 'de',
+       'latitude': 51.56,
+       'longitude': 7.65,
+       'postal_code': '59425'}
+   Raw Data:
+   {   'area_codes': '?',
+       'city': 'unna',
+       'city_code': 7627,
+       'city_conf': 95,
+       'connection_speed': 'xdsl',
+       'connection_type': 'wifi',
+       'continent_code': 5,
+       'country': 'deu',
+       'country_code': 276,
+       'country_conf': 99,
+       'gmt_offset': 200,
+       'in_dst': 'y',
+       'internal_code': 24,
+       'latitude': 51.56,
+       'longitude': 7.65,
+       'max_ip': '93.231.182.111',
+       'metro_code': 276002,
+       'min_ip': '93.231.182.104',
+       'postal_code': '59425',
+       'postal_conf': 90,
+       'region': 'nw',
+       'region_code': 10528,
+       'region_conf': 99,
+       'timezone_name': 'europe/berlin',
+       'two_letter_country': 'de'}
+   ```
 
