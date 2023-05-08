@@ -20,11 +20,18 @@ Note: this setup has only been testing for macOS.
 1. Create a new virtual enviornemtn: `pyenv virtualenv 3.11.2 pangea`
 1. Link the virutal enviornemtn to the repo: `pyenv local pangea`
 1. Ensure you are using the enviornment you just created:`pyenv which python` you should see something like: `.pyenv/versions/pangea/bin/python`. if you don't see `pangea` somewhere in the path, you've made a mistake somewhere
-
-### Dependencies
-
 1. `pip install -r requriements.txt`
+
+### Pangea
+
+1. Create a Pangea account: https://pangea.cloud/docs/admin-guide/getting-started/create-account/
+1. Login to Pangea console
+1. Go to the Tokens page: https://console.pangea.cloud/project/tokens and click on the the "Create" button in the upper right hand corner
+1. Enter a name for the token and click the box labeled `IP Intel`
+   ![pangea console token creation page](https://raw.githubusercontent.com/mattcarrollcode/pangea/main/console-create-a-token.png) then click the `Create token` button
+1. Next, in the list of tokens, click the copy symbole on the token you just created and paste it in the `.env` file in the repo in plac eof `CHANGE_ME` for the value of `PANGEA_INTEL_TOKEN`
 
 ## Running the code
 
-1. Python `python pangea.py`
+1. Python `python pangea-ip-intel-example.py`
+
